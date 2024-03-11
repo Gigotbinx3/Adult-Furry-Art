@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furry Ai Art(18+)</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    /* Style the grid container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+      grid-gap: 10px; /* 10px gap between the cells */
+      margin: 20px; /* 20px margin around the container */
+    }
+
+    /* Style the grid items (thumbnails) */
+    .grid-item {
+      width: 100%; /* Fill the cell width */
+      height: auto; /* Keep the aspect ratio */
+      cursor: pointer; /* Change the cursor to a hand */
+    }
+
+    /* Style the modal window */
+    .modal {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgba(0,0,0,0.8); /* Black background with opacity */
+    }
+
+    /* Style the modal content (large image) */
+    .modal-content {
+      margin: auto;
+      display: block;
+      width: 80%; /* 80% of the modal width */
+      max-width: 700px; /* Maximum width of 700px */
+    }
+
+    /* Style the close button */
+    .close {
+      position: absolute;
+      top: 15px;
+      right: 35px;
+      color: white;
+      font-size: 40px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>Adult Furry Art(18+)</h1>
+<br />
+  <!-- The grid container -->
+  <div class="grid-container">
+    <!-- The grid items (thumbnails) -->
+    <img src="pica/bami1.jfif" alt="Image 1" class="grid-item">
+    <img src="pica/bami2.jfif" alt="Image 2" class="grid-item">
+    <img src="pica/bami3.jfif" alt="Image 3" class="grid-item">
+    <img src="pica/bami4.jfif" alt="Image 4" class="grid-item">
+    <img src="pica/bami5.jfif" alt="Image 5" class="grid-item">
+    <img src="pica/bami6.jfif" alt="Image 6" class="grid-item">
+    <img src="pica/beach loona.jfif" alt="Image 7" class="grid-item">
+    <img src="pica/downi5.jfif" alt="Image 8" class="grid-item">
+    <img src="pica/downloadi.jfif" alt="Image 9" class="grid-item">
+    <img src="pica/downloadi10.jfif" alt="Image 10" class="grid-item">
+    <img src="pica/downloadi11.jfif" alt="Image 11" class="grid-item">
+    <img src="pica/downloadi12.webp" alt="Image 12" class="grid-item">
+    <img src="pica/downloadi2.jfif" alt="Image 13" class="grid-item">
+    <img src="pica/downloadi3.jfif" alt="Image 14" class="grid-item">
+    <img src="pica/downloadi4.jfif" alt="Image 15" class="grid-item">
+    <img src="pica/downloadi6.jfif" alt="Image 16" class="grid-item">
+    <img src="pica/downloadi7.jfif" alt="Image 17" class="grid-item">
+    <img src="pica/downloadi8.jfif" alt="Image 18" class="grid-item">
+    <img src="pica/downloadi9.jfif" alt="Image 19" class="grid-item">
+    <img src="pica/loona.jfif" alt="Image 20" class="grid-item">
+    <img src="pica/Fox1.jfif" alt="Image 20" class="grid-item">
+    <img src="pica/Fox2.jfif" alt="Image 20" class="grid-item">
+    <img src="pica/Jackal.jfif" alt="Image 20" class="grid-item">
+    <img src="pica/Porsha.jfif" alt="Image 20" class="grid-item">
+  </div>
+
+  <!-- The modal window -->
+  <div id="modal" class="modal">
+    <!-- The close button -->
+    <span id="close" class="close">&times;</span>
+    <!-- The modal content (large image) -->
+    <img id="modal-content" class="modal-content">
+  </div>
+
+  <script>
+    // Get the modal window element
+    var modal = document.getElementById("modal");
+
+    // Get the modal content element
+    var modalContent = document.getElementById("modal-content");
+
+    // Get the close button element
+    var close = document.getElementById("close");
+
+    // Get all the grid items (thumbnails)
+    var gridItems = document.getElementsByClassName("grid-item");
+
+    // Loop through the grid items and add a click event listener to each one
+    for (var i = 0; i < gridItems.length; i++) {
+      gridItems[i].addEventListener("click", function() {
+        // When a grid item is clicked, show the modal window
+        modal.style.display = "block";
+        // Set the modal content source and alt attributes to match the clicked grid item
+        modalContent.src = this.src;
+        modalContent.alt = this.alt;
+      });
+    }
+
+    // Add a click event listener to the close button
+    close.addEventListener("click", function() {
+      // When the close button is clicked, hide the modal window
+      modal.style.display = "none";
+    });
+
+    // Add a click event listener to the modal window
+    modal.addEventListener("click", function(event) {
+      // When the modal window is clicked, check if the target is the modal content or not
+      if (event.target != modalContent) {
+        // If the target is not the modal content, hide the modal window
+        modal.style.display = "none";
+      }
+    });
+  </script>
+</body>
+</html>
